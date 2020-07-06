@@ -13,6 +13,8 @@ body {
 p{
     font-size: 18px;
 }
+
+/* Header */
 header{
     padding: 16px 32px;
     text-align: center;
@@ -35,16 +37,19 @@ header #blog-name {
 }
 header a{
     text-decoration: none;
-    padding: 0px 8px;
     justify-content: center;
-    border-right: #000 solid  4px;
-    padding: 0px 32px;
-    text-align: left;
+    padding: 0px 16px;
+    text-align: center;
+    color:black;
 }
 
 header a:hover{
-    background-color: #000;
-    color: white;
+    border-bottom: #000 solid 2px;
+}
+a {
+    color: var(--cor-fsk);
+    text-decoration: none;
+    font-weight: bold;
 }
 .logos{
     width: 32px;
@@ -56,29 +61,23 @@ header a:hover{
     margin: 32px;
 
 }
+.articles  {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
 
 section h1, aside h1 {
     color: var(--cor-fsk);
     font-size: 42px;
 }
-section h3, aside h3  {
-    text-align: center;
-    border: #000 solid 2px;
-    border-radius: 12px;
-    margin: 8px 0;
-    padding: 4px;
-    background-color: var(--cor-fsk);
-}
+
 section h1 , h2 , h3 {
     text-align: center;
-    padding: 4px;
+    padding: 4px 0px 12px 0px;
+    font-weight: bold;
 }
-section h3:hover, aside h3:hover{
-    color: rgb(255, 255, 255);
-    background-color: #ff9d00;
-    transition: 250ms ease-in-out;
-    font-size: 20px;
-}
+
 aside {
     max-height: 500px;
     background-color: #fff;
@@ -90,10 +89,24 @@ aside {
     border-radius: 20px 20px 20px 20px;
     text-align: center;
 }
-a {
-    color: var(--cor-fsk);
-    text-decoration: none;
-    font-weight: bold;
+
+.readmore {
+    text-align: center;
+    border: #000 solid 2px;
+    border-radius: 12px;
+    margin: 8px 0;
+    padding: 4px;
+    background-color: var(--cor-fsk);
+}
+.readmore a {
+    color: black;
+    font-size: 18px;
+}
+.readmore:hover{
+    color: rgb(255, 255, 255);
+    background-color: #ff9d00;
+    transition: 250ms ease-in-out;
+    font-size: 22px;
 }
 aside img {
     width: 250px;
@@ -111,4 +124,15 @@ footer {
     background-color: black;
     margin: 0 auto;
     padding: 32px 64px;
+}
+@media only screen and (max-width: 600px){
+    .container{
+        display: block;
+    }
+    header{
+        display: block;
+    }
+    header #blog-name{
+        width: 100%;
+    }
 }

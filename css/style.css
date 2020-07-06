@@ -35,6 +35,18 @@ header #blog-name {
     border-right: #000 solid  4px;
     padding: 0px 32px;
 }
+.teste {
+    background-color: black;
+}
+.teste h1 {
+    color: white;
+}
+.teste a{
+    color: #000;
+    background-color: var(--cor-fsk);
+    border-radius: 12px;
+    padding: 4px;
+}
 header a{
     text-decoration: none;
     justify-content: center;
@@ -94,9 +106,9 @@ aside {
     text-align: center;
     border: #000 solid 2px;
     border-radius: 12px;
-    margin: 8px 0;
     padding: 4px;
     background-color: var(--cor-fsk);
+    width: 100px;
 }
 .readmore a {
     color: black;

@@ -109,6 +109,7 @@ aside {
     padding: 4px;
     background-color: var(--cor-fsk);
     width: 100px;
+    box-sizing: border-box;
 }
 .readmore a {
     color: black;
